@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'zombie-tower-defense' target in the 'zombie-tower-defense' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
