@@ -2037,6 +2037,7 @@
 				GCC_PREFIX_HEADER = "zombie-tower-defense/Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "zombie-tower-defense/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/zombie-tower-defense/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -2060,6 +2061,7 @@
 				GCC_PREFIX_HEADER = "zombie-tower-defense/Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "zombie-tower-defense/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/zombie-tower-defense/libs/cocos2dx/platform/third_party/ios/libraries\"",
