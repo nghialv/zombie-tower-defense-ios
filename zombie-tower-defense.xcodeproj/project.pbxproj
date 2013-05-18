@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC237BCB1747A6CE00433E02 /* grass-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = DC237BC91747A6CE00433E02 /* grass-tiles.png */; };
+		DC237BCC1747A6CE00433E02 /* level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC237BCA1747A6CE00433E02 /* level1.tmx */; };
 		DC9D11B617466A5400E58596 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9D11B517466A5400E58596 /* QuartzCore.framework */; };
 		DC9D11B817466A5400E58596 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9D11B717466A5400E58596 /* OpenGLES.framework */; };
 		DC9D11BA17466A5400E58596 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9D11B917466A5400E58596 /* OpenAL.framework */; };
@@ -218,11 +220,14 @@
 		DC9D148A17466A5B00E58596 /* CCPhysicsSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9D148917466A5B00E58596 /* CCPhysicsSprite.cpp */; };
 		DC9D148E17466A5B00E58596 /* cocos2dx-ext.mkf in Resources */ = {isa = PBXBuildFile; fileRef = DC9D148D17466A5B00E58596 /* cocos2dx-ext.mkf */; };
 		DC9D149017466A5B00E58596 /* cocos2dx-ext_public.defines.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC9D148F17466A5B00E58596 /* cocos2dx-ext_public.defines.txt */; };
-		DCD01924174677E5000D849E /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD01920174677E5000D849E /* AppDelegate.cpp */; };
-		DCD01925174677E5000D849E /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD01922174677E5000D849E /* HelloWorldScene.cpp */; };
+		DCB207661747B0930058B670 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB207621747B0930058B670 /* AppDelegate.cpp */; };
+		DCB2076B1747B2EA0058B670 /* Level1Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB207691747B2EA0058B670 /* Level1Scene.cpp */; };
+		DCB2076E1747C2850058B670 /* IntroScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB2076C1747C2850058B670 /* IntroScene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC237BC91747A6CE00433E02 /* grass-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grass-tiles.png"; path = "Resources/grass-tiles.png"; sourceTree = "<group>"; };
+		DC237BCA1747A6CE00433E02 /* level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = level1.tmx; path = Resources/level1.tmx; sourceTree = "<group>"; };
 		DC9D11B217466A5400E58596 /* zombie-tower-defense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zombie-tower-defense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9D11B517466A5400E58596 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DC9D11B717466A5400E58596 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -686,10 +691,13 @@
 		DC9D148D17466A5B00E58596 /* cocos2dx-ext.mkf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "cocos2dx-ext.mkf"; path = "libs/extensions/proj.marmalade/cocos2dx-ext.mkf"; sourceTree = "<group>"; };
 		DC9D148F17466A5B00E58596 /* cocos2dx-ext_public.defines.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "cocos2dx-ext_public.defines.txt"; path = "libs/extensions/proj.marmalade/cocos2dx-ext_public.defines.txt"; sourceTree = "<group>"; };
 		DC9D149217466A5B00E58596 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		DCD01920174677E5000D849E /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = "../../../cocos2d-2.1rc0-x-2.1.2/zombietowerdefense/Classes/AppDelegate.cpp"; sourceTree = "<group>"; };
-		DCD01921174677E5000D849E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../../cocos2d-2.1rc0-x-2.1.2/zombietowerdefense/Classes/AppDelegate.h"; sourceTree = "<group>"; };
-		DCD01922174677E5000D849E /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = "../../../cocos2d-2.1rc0-x-2.1.2/zombietowerdefense/Classes/HelloWorldScene.cpp"; sourceTree = "<group>"; };
-		DCD01923174677E5000D849E /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = "../../../cocos2d-2.1rc0-x-2.1.2/zombietowerdefense/Classes/HelloWorldScene.h"; sourceTree = "<group>"; };
+		DCB207621747B0930058B670 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
+		DCB207631747B0930058B670 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		DCB207681747B0AE0058B670 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		DCB207691747B2EA0058B670 /* Level1Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level1Scene.cpp; sourceTree = "<group>"; };
+		DCB2076A1747B2EA0058B670 /* Level1Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1Scene.h; sourceTree = "<group>"; };
+		DCB2076C1747C2850058B670 /* IntroScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntroScene.cpp; sourceTree = "<group>"; };
+		DCB2076D1747C2850058B670 /* IntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroScene.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -760,6 +768,8 @@
 		DC9D11C617466A5400E58596 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DC237BC91747A6CE00433E02 /* grass-tiles.png */,
+				DC237BCA1747A6CE00433E02 /* level1.tmx */,
 				DC9D11C717466A5400E58596 /* CloseNormal.png */,
 				DC9D11C917466A5400E58596 /* CloseSelected.png */,
 				DC9D11CB17466A5400E58596 /* Default.png */,
@@ -1690,10 +1700,13 @@
 		DCD0191F174677A6000D849E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DCD01920174677E5000D849E /* AppDelegate.cpp */,
-				DCD01921174677E5000D849E /* AppDelegate.h */,
-				DCD01922174677E5000D849E /* HelloWorldScene.cpp */,
-				DCD01923174677E5000D849E /* HelloWorldScene.h */,
+				DCB207681747B0AE0058B670 /* Common.h */,
+				DCB207631747B0930058B670 /* AppDelegate.h */,
+				DCB207621747B0930058B670 /* AppDelegate.cpp */,
+				DCB2076D1747C2850058B670 /* IntroScene.h */,
+				DCB2076C1747C2850058B670 /* IntroScene.cpp */,
+				DCB2076A1747B2EA0058B670 /* Level1Scene.h */,
+				DCB207691747B2EA0058B670 /* Level1Scene.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1763,6 +1776,8 @@
 				DC9D13E217466A5A00E58596 /* project.pbxproj in Resources */,
 				DC9D148E17466A5B00E58596 /* cocos2dx-ext.mkf in Resources */,
 				DC9D149017466A5B00E58596 /* cocos2dx-ext_public.defines.txt in Resources */,
+				DC237BCB1747A6CE00433E02 /* grass-tiles.png in Resources */,
+				DC237BCC1747A6CE00433E02 /* level1.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1959,8 +1974,9 @@
 				DC9D148117466A5B00E58596 /* HttpClient.cpp in Sources */,
 				DC9D148717466A5B00E58596 /* CCPhysicsDebugNode.cpp in Sources */,
 				DC9D148A17466A5B00E58596 /* CCPhysicsSprite.cpp in Sources */,
-				DCD01924174677E5000D849E /* AppDelegate.cpp in Sources */,
-				DCD01925174677E5000D849E /* HelloWorldScene.cpp in Sources */,
+				DCB207661747B0930058B670 /* AppDelegate.cpp in Sources */,
+				DCB2076B1747B2EA0058B670 /* Level1Scene.cpp in Sources */,
+				DCB2076E1747C2850058B670 /* IntroScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
