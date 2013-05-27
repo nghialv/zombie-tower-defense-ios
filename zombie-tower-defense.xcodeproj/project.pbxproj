@@ -223,6 +223,10 @@
 		DCB207661747B0930058B670 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB207621747B0930058B670 /* AppDelegate.cpp */; };
 		DCB2076B1747B2EA0058B670 /* Level1Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB207691747B2EA0058B670 /* Level1Scene.cpp */; };
 		DCB2076E1747C2850058B670 /* IntroScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB2076C1747C2850058B670 /* IntroScene.cpp */; };
+		F2F9B9A51751FFAE00202D42 /* Zombie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2F9B9A31751FFAE00202D42 /* Zombie.cpp */; };
+		F2F9B9A81752000500202D42 /* Cannon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2F9B9A61752000500202D42 /* Cannon.cpp */; };
+		F2F9B9AB175200A000202D42 /* zombiex.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2F9B9A9175200A000202D42 /* zombiex.plist */; };
+		F2F9B9AC175200A000202D42 /* zombiex.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9B9AA175200A000202D42 /* zombiex.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -698,6 +702,12 @@
 		DCB2076A1747B2EA0058B670 /* Level1Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1Scene.h; sourceTree = "<group>"; };
 		DCB2076C1747C2850058B670 /* IntroScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntroScene.cpp; sourceTree = "<group>"; };
 		DCB2076D1747C2850058B670 /* IntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroScene.h; sourceTree = "<group>"; };
+		F2F9B9A31751FFAE00202D42 /* Zombie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Zombie.cpp; sourceTree = "<group>"; };
+		F2F9B9A41751FFAE00202D42 /* Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zombie.h; sourceTree = "<group>"; };
+		F2F9B9A61752000500202D42 /* Cannon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cannon.cpp; sourceTree = "<group>"; };
+		F2F9B9A71752000500202D42 /* Cannon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cannon.h; sourceTree = "<group>"; };
+		F2F9B9A9175200A000202D42 /* zombiex.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = zombiex.plist; path = Resources/zombiex.plist; sourceTree = "<group>"; };
+		F2F9B9AA175200A000202D42 /* zombiex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zombiex.png; path = Resources/zombiex.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -768,6 +778,8 @@
 		DC9D11C617466A5400E58596 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F2F9B9A9175200A000202D42 /* zombiex.plist */,
+				F2F9B9AA175200A000202D42 /* zombiex.png */,
 				DC237BC91747A6CE00433E02 /* grass-tiles.png */,
 				DC237BCA1747A6CE00433E02 /* level1.tmx */,
 				DC9D11C717466A5400E58596 /* CloseNormal.png */,
@@ -1707,6 +1719,10 @@
 				DCB2076C1747C2850058B670 /* IntroScene.cpp */,
 				DCB2076A1747B2EA0058B670 /* Level1Scene.h */,
 				DCB207691747B2EA0058B670 /* Level1Scene.cpp */,
+				F2F9B9A31751FFAE00202D42 /* Zombie.cpp */,
+				F2F9B9A41751FFAE00202D42 /* Zombie.h */,
+				F2F9B9A61752000500202D42 /* Cannon.cpp */,
+				F2F9B9A71752000500202D42 /* Cannon.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1778,6 +1794,8 @@
 				DC9D149017466A5B00E58596 /* cocos2dx-ext_public.defines.txt in Resources */,
 				DC237BCB1747A6CE00433E02 /* grass-tiles.png in Resources */,
 				DC237BCC1747A6CE00433E02 /* level1.tmx in Resources */,
+				F2F9B9AB175200A000202D42 /* zombiex.plist in Resources */,
+				F2F9B9AC175200A000202D42 /* zombiex.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1977,6 +1995,8 @@
 				DCB207661747B0930058B670 /* AppDelegate.cpp in Sources */,
 				DCB2076B1747B2EA0058B670 /* Level1Scene.cpp in Sources */,
 				DCB2076E1747C2850058B670 /* IntroScene.cpp in Sources */,
+				F2F9B9A51751FFAE00202D42 /* Zombie.cpp in Sources */,
+				F2F9B9A81752000500202D42 /* Cannon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,13 @@
 #include "Level1Scene.h"
 #include "Common.h"
 #include "SimpleAudioEngine.h"
+#include "Zombie.h"
+#include "Cannon.h"
 
 using namespace CocosDenshion;
 
+Zombie **_zombie = new Zombie*[30];
+int timeCount = 0;
 CCScene* Level1::scene()
 {
     // 'scene' is an autorelease object
@@ -57,7 +61,29 @@ bool Level1::init()
     pMenu->setPosition(CCPointZero);
     this->addChild(pMenu, 1);
     
+    this->flag = 0;
+    
+    
+    for(int i=0;i<30;i++){
+        //z[i] = new Zombie;
+        _zombie[i] = new Zombie;
+        _zombie[i]->z_AddToMap(this,i);
+    }
+    
+    this->schedule(schedule_selector(Level1::update));
+    
     return true;
+}
+
+
+void Level1::update(float dt){
+    Cannon * cannon = new Cannon;
+    for(int i=0;i<30;i++){
+        if(++timeCount > 1000*i){
+            _zombie[i]->z_move();
+            if(i%2 == 0) _zombie[i]->z_get_dam(cannon);
+        }
+    }
 }
 
 void Level1::addCannonCallback(CCObject* pSender)
@@ -67,7 +93,8 @@ void Level1::addCannonCallback(CCObject* pSender)
 
 bool Level1::ccTouchBegan(CCTouch* touch, CCEvent* event)
 {
-    printf("Touches Began¥n");
+    this->flag = 1;
+    printf("Touches Began, %d¥n",this->flag);
     return true;
 }
 
